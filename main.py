@@ -106,6 +106,7 @@ def main() -> None:
         img_path, out_path = args.input, args.output
     else:
         root = Tk()
+        root.attributes('-topmost', True)
         root.withdraw()
         print('Select input image…')
         img_path = askopenfilename(
